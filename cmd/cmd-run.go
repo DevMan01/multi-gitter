@@ -49,7 +49,7 @@ func RunCmd() *cobra.Command {
 	cmd.Flags().IntP("concurrent", "C", 1, "The maximum number of concurrent runs.")
 	cmd.Flags().BoolP("skip-pr", "", false, "Skip pull request and directly push to the branch.")
 	cmd.Flags().BoolP("push-only", "", false, "Skip pull request and only push the feature branch.")
-	cmd.Flags().StringSliceP("skip-repo", "s", nil, "Skip changes on specified repositories, the name is including the owner of repository in the format \"ownerName/repoName\".")
+	cmd.Flags().StringSliceP("skip-repo", "s", nil, "Skip changes on specified repositories, the name is including the owner of repository in the format \"ownerName/repoName\". Multiple repositories separated by commas without spaces.")
 	cmd.Flags().BoolP("interactive", "i", false, "Take manual decision before committing any change. Requires git to be installed.")
 	cmd.Flags().BoolP("dry-run", "d", false, "Run without pushing changes or creating pull requests.")
 	cmd.Flags().StringP("conflict-strategy", "", "skip", `What should happen if the branch already exist.
