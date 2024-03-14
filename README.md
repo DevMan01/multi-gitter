@@ -687,7 +687,7 @@ Flags:
   -r, --reviewers strings          The username of the reviewers to be added on the pull request.
       --skip-forks                 Skip repositories which are forks.
       --skip-pr                    Skip pull request and directly push to the branch.
-  -s, --skip-repo strings          Skip changes on specified repositories, the name is including the owner of repository in the format "ownerName/repoName".
+  -s, --skip-repo strings          Skip changes on specified repositories, the name is including the owner of repository in the format "ownerName/repoName". Multiple repositories separated by commas without spaces.
       --ssh-auth                   Use SSH cloning URL instead of HTTPS + token. This requires that a setup with ssh keys that have access to all repos and that the server is already in known_hosts.
       --team-reviewers strings     Github team names of the reviewers, in format: 'org/team'
   -T, --token string               The personal access token for the targeting platform. Can also be set using the GITHUB_TOKEN/GITLAB_TOKEN/GITEA_TOKEN/BITBUCKET_SERVER_TOKEN environment variable.
